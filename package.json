@@ -1,33 +1,33 @@
 {
-    "name": "my-bruno",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-        "dev": "pnpm --filter @my-bruno/* --parallel dev",
-        "build": "pnpm --filter @my-bruno/* --parallel build",
-        "lint": "eslint .",
-        "format": "prettier --write .",
-        "report": "pnpm --filter @my-bruno/* --parallel report"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@usebruno/cli": "^2.2.2",
-        "moment": "^2.30.1",
-        "zod": "^3.24.4"
-    },
-    "devDependencies": {
-        "@eslint/json": "^0.12.0",
-        "@eslint/markdown": "^6.4.0",
-        "@types/node": "^22.15.17",
-        "eslint": "^9.26.0",
-        "eslint-config-prettier": "^10.1.5",
-        "prettier": "3.5.3",
-        "typescript": "^5.8.3",
-        "typescript-eslint": "^8.32.1"
-    },
-    "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
+	"name": "my-bruno",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "pnpm --filter @my-bruno/shared build && pnpm --filter @my-bruno/* --parallel dev",
+		"build": "pnpm --filter @my-bruno/shared build && pnpm --filter @my-bruno/* --parallel build",
+		"lint": "eslint .",
+		"format": "prettier --write .",
+		"report": "pnpm --filter @my-bruno/* --parallel report"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@usebruno/cli": "^2.2.2",
+		"moment": "^2.30.1",
+		"zod": "^3.24.4"
+	},
+	"devDependencies": {
+		"@eslint/json": "^0.12.0",
+		"@eslint/markdown": "^6.4.0",
+		"@types/node": "^22.15.17",
+		"eslint": "^9.26.0",
+		"eslint-config-prettier": "^10.1.5",
+		"prettier": "3.5.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.32.1"
+	},
+	"packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
 }
