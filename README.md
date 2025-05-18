@@ -1,4 +1,4 @@
-# Bruno PNPM, TypeScript Monorepo Example
+# Bruno, PNPM, TypeScript Monorepo Example
 
 This repository provides an example architecture for structuring a monorepo using pnpm workspaces, focusing on integrating [Bruno](https://github.com/usebruno/bruno) API collections with shared tooling and configurations.
 
