@@ -11,7 +11,7 @@ const secret = bru.getEnvVar('SECRET');
 
 const { encrypt } = createEncryptor(secret);
 
-// Encrypt token;
+// Encrypt token
 
 const token = encrypt(bru.getEnvVar('TOKEN'));
 
