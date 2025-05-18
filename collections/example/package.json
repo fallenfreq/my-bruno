@@ -1,0 +1,23 @@
+{
+	"name": "@my-bruno/acb",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsc --build -w",
+		"build": "tsc --build",
+		"report": "npx bru run --env dev --env-var TEST=123 --reporter-json reports/results.json --reporter-junit reports/results.xml --reporter-html reports/results.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@my-bruno/shared": "workspace:*",
+		"jsonwebtoken": "^9.0.2",
+		"simple-encryptor": "^4.0.0"
+	},
+	"devDependencies": {
+		"@my-bruno/bruno-globals": "workspace:*",
+		"@types/jsonwebtoken": "^9.0.9"
+	}
+}

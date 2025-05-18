@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        // Bruno only supports Require imports
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "incremental": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+        // Needs to be false when outputting to CommonJs with a target of ESNextS
+        "verbatimModuleSyntax": false,
+        "isolatedModules": true,
+        "declaration": true,
+        "sourceMap": true,
+        "tsBuildInfoFile": ".tsbuildinfo",
+        "skipLibCheck": true
+    }
+}

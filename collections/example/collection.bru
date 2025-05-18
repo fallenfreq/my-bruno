@@ -1,0 +1,7 @@
+script:pre-request {
+  require("./dist/pre-request")
+}
+
+script:post-response { 
+  bru.deleteAllVars()
+}

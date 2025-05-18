@@ -1,0 +1,13 @@
+{
+    "version": "1",
+    "name": "acb",
+    "type": "collection",
+    "ignore": ["node_modules", ".git", "reports", "src", "dist"],
+    "scripts": {
+        "moduleWhitelist": ["jsonwebtoken", "simple-encryptor"],
+        "filesystemAccess": {
+            "allow": true
+        },
+        "additionalContextRoots": ["../../"]
+    }
+}

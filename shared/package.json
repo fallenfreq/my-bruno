@@ -1,0 +1,17 @@
+{
+    "name": "@my-bruno/shared",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "scripts": {
+        "dev": "tsc --build -w",
+        "build": "tsc --build"
+    },
+    "devDependencies": {
+        "@my-bruno/bruno-globals": "workspace:*"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.11.0"
+}

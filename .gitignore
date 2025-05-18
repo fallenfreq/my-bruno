@@ -1,0 +1,9 @@
+# Directories
+node_modules/
+dist/
+
+# Files
+.tsbuildinfo
+TODO.md
+*.code-workspace
+.env
