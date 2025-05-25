@@ -12,7 +12,6 @@ const secret = bru.getEnvVar('SECRET');
 const { encrypt } = createEncryptor(secret);
 
 // Encrypt token
-
 const token = encrypt(bru.getEnvVar('TOKEN'));
 
 bru.setVar(
@@ -20,9 +19,9 @@ bru.setVar(
 	jwt.sign(
 		{
 			data: {
-				token
+				token,
 			},
-			exp: 2147443649
+			exp: 2147443649,
 		},
 		secret
 	)
