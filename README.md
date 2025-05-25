@@ -53,13 +53,25 @@ This configuration is already set up in the example collection within this repos
     pnpm install
     ```
 
-3.  **Start TypeScript compilation in watch mode:**
+3.  **Build bruno-globals**
+
+    ```bash
+    pnpm build:bruno-globals
+    ```
+
+4.  **Build shared**
+
+    ```bash
+    pnpm build:shared
+    ```
+
+5.  **Start TypeScript compilation in watch mode:**
 
     ```bash
     pnpm dev
     ```
 
-    This command will start the TypeScript compiler in watch mode, automatically recompiling files as you make changes. This will likely fail the first time because the collections will try to build before the shared package has built. [Turborepo ](https://turborepo.com/) or something similar will be added to address this soon!
+    It is necessary to build the bruno-globals and shared packages first since they rely on each other. [Turborepo ](https://turborepo.com/) or something similar will be added to address this soon!
 
 Explore the directory structure to see how the Bruno collections (`apps/bruno-collections`), shared configurations (`packages/config`), and potential shared scripts are organized.
 
