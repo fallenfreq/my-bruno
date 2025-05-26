@@ -45,6 +45,7 @@ export default defineConfig([
 		languageOptions: { parser: tseslint.parser, sourceType: 'module', globals: globals.node },
 		rules: {
 			'@stylistic/operator-linebreak': ['error', 'before'],
+			'@typescript-eslint/no-explicit-any': 'off',
 		},
 	},
 ]);
