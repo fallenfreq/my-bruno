@@ -11,6 +11,7 @@ const config = {
 	singleQuote: true,
 	printWidth: 100,
 	plugins: ['prettier-plugin-organize-imports'],
+	organizeImportsSkipDestructiveCodeActions: true,
 };
 
 export default config;
