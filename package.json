@@ -9,7 +9,7 @@
 		"build": "pnpm --filter @my-bruno/* --parallel build",
 		"build:shared": "pnpm --filter @my-bruno/shared build",
 		"build:bruno-globals": "pnpm --filter @my-bruno/bruno-globals build",
-		"lint": "eslint --fix",
+		"lint": "eslint --flag unstable_config_lookup_from_file --fix",
 		"format": "prettier --write .",
 		"report": "pnpm --filter @my-bruno/* --parallel report"
 	},
