@@ -1,6 +1,6 @@
+import { test } from '@my-bruno/shared';
 import jwt from 'jsonwebtoken';
 import { createEncryptor } from 'simple-encryptor';
-import { test } from '@my-bruno/shared';
 
 // We can click view > Toggle Developer Tools to see the console and confirm
 // that `test` from the shared module is available.
