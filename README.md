@@ -50,7 +50,7 @@ This configuration is already set up in the example collection within this repos
 2.  **Install dependencies:**
 
     ```bash
-    pnpm install
+    pnpm install --shamefully-hoist
     ```
 
 3.  **Build bruno-globals**
